@@ -1,14 +1,17 @@
-package com.example.emrannik.dashboardui;
-
+package com.example.emrannik.dashboardui.FOOD;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.emrannik.dashboardui.FOOD.AdapterMoreFood;
+import com.example.emrannik.dashboardui.FOOD.AdapterPopularFood;
+import com.example.emrannik.dashboardui.FOOD.DataFood;
+import com.example.emrannik.dashboardui.R;
 
 import java.util.ArrayList;
 

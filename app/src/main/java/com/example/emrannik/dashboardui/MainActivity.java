@@ -1,10 +1,10 @@
 package com.example.emrannik.dashboardui;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
-
 import android.os.Bundle;
 
+import com.example.emrannik.dashboardui.DRINK.DrinkFragment;
+import com.example.emrannik.dashboardui.FOOD.FoodFragment;
 import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {

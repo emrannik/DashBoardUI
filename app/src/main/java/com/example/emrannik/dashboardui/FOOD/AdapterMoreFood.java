@@ -1,23 +1,21 @@
-package com.example.emrannik.dashboardui;
-
+package com.example.emrannik.dashboardui.FOOD;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.w3c.dom.Text;
+import com.example.emrannik.dashboardui.R;
 
 import java.util.List;
 
-public class AdapterPopularFood extends RecyclerView.Adapter<AdapterPopularFood.ViewHolder> {
+public class AdapterMoreFood extends RecyclerView.Adapter<AdapterMoreFood.ViewHolder> {
     List<DataFood> foodList;
     Context context;
 
-    public AdapterPopularFood(List<DataFood> foodList, Context context) {
+    public AdapterMoreFood(List<DataFood> foodList, Context context) {
         this.foodList = foodList;
         this.context = context;
     }
@@ -25,7 +23,7 @@ public class AdapterPopularFood extends RecyclerView.Adapter<AdapterPopularFood.
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.view_popular_food,viewGroup,false);
+        View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.view_more_food,viewGroup,false);
         ViewHolder viewHolder = new ViewHolder(v);
         return viewHolder;
     }

@@ -1,55 +1,51 @@
-package com.example.emrannik.dashboardui;
-
+package com.example.emrannik.dashboardui.FOOD;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.emrannik.dashboardui.R;
+
 import java.util.List;
 
-public class AdapterDrink extends RecyclerView.Adapter<AdapterDrink.ViewHolder> {
-    List<DataDrink> drinkList;
+public class AdapterPopularFood extends RecyclerView.Adapter<AdapterPopularFood.ViewHolder> {
+    List<DataFood> foodList;
     Context context;
 
-    public AdapterDrink(List<DataDrink> drinkList, Context context) {
-        this.drinkList = drinkList;
+    public AdapterPopularFood(List<DataFood> foodList, Context context) {
+        this.foodList = foodList;
         this.context = context;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.view_more_food,viewGroup,false);
+        View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.view_popular_food,viewGroup,false);
         ViewHolder viewHolder = new ViewHolder(v);
         return viewHolder;
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
-        viewHolder.foodname.setText(drinkList.get(i).getdrinkName());
-        viewHolder.price.setText("Rp."+drinkList.get(i).getPrice());
-        viewHolder.img.setImageResource(drinkList.get(i).getImg());
+        viewHolder.foodname.setText(foodList.get(i).getFoodName());
+        viewHolder.price.setText("Rp."+foodList.get(i).getPrice());
     }
 
     @Override
     public int getItemCount() {
-        return drinkList.size();
+        return foodList.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         public TextView foodname,price;
-        public ImageView img;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             foodname    = itemView.findViewById(R.id.tvNameFood);
             price       = itemView.findViewById(R.id.tvPrice);
-            img         = itemView.findViewById(R.id.img);
         }
     }
 }

@@ -1,17 +1,18 @@
-package com.example.emrannik.dashboardui;
-
+package com.example.emrannik.dashboardui.DRINK;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.emrannik.dashboardui.DRINK.AdapterDrink;
+import com.example.emrannik.dashboardui.DRINK.DataDrink;
+import com.example.emrannik.dashboardui.R;
+
 import java.util.ArrayList;
-import java.util.List;
 
 
 /**

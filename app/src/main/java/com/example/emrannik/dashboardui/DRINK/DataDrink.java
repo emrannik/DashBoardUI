@@ -1,4 +1,4 @@
-package com.example.emrannik.dashboardui;
+package com.example.emrannik.dashboardui.DRINK;
 
 public class DataDrink {
     String drinkName;
